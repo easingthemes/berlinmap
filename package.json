@@ -1,15 +1,15 @@
 {
-  "name": "react-boilerplate",
+  "name": "Berlin fast map",
   "version": "3.3.3",
-  "description": "A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices",
+  "description": "ReactJS google map, based on Max Stoiber react-boilerplate",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mxstbr/react-boilerplate.git"
+    "url": "git@github.com:easingthemes/berlinmap.git"
   },
   "engines": {
     "npm": ">=3"
   },
-  "author": "Max Stoiber",
+  "author": "Dragan Filipovic",
   "license": "MIT",
   "scripts": {
     "analyze:clean": "rimraf stats.json",
