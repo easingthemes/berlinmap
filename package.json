@@ -1,6 +1,6 @@
 {
-  "name": "Berlin fast map",
-  "version": "3.3.3",
+  "name": "berlin-map",
+  "version": "0.0.2",
   "description": "ReactJS google map, based on Max Stoiber react-boilerplate",
   "repository": {
     "type": "git",
