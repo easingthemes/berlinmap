@@ -7,9 +7,9 @@ module.exports = (config) => {
     frameworks: ['mocha'],
     reporters: ['coverage', 'mocha'],
     browsers: process.env.TRAVIS // eslint-disable-line no-nested-ternary
-      ? ['ChromeTravis']
+      ? ['PhantomCustom']
       : process.env.APPVEYOR
-        ? ['IE'] : ['Chrome'],
+        ? ['IE'] : ['PhantomJS'],
 
     autoWatch: false,
     singleRun: true,
@@ -46,6 +46,22 @@ module.exports = (config) => {
         base: 'Chrome',
         flags: ['--no-sandbox'],
       },
+      PhantomCustom: {
+        base: 'PhantomJS',
+        flags: ['--no-sandbox --load-images=false'],
+        options: {
+          windowName: 'my-window',
+          settings: {
+            webSecurityEnabled: false,
+          },
+        },
+        debug: false,
+      },
+    },
+
+    phantomjsLauncher: {
+      // Have phantomjs exit if a ResourceError is encountered (useful if karma exits without killing phantom)
+      exitOnResourceError: true,
     },
 
     coverageReporter: {

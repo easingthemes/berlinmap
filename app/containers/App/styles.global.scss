@@ -1,0 +1,19 @@
+.wrapper {
+  height: 100%;
+}
+.column {
+  width: 50%;
+
+  &--fixed {
+    position: fixed;
+    bottom: 0;
+  }
+
+  &__left {
+    left: 0
+  }
+
+  &__right {
+    right: 0
+  }
+}
