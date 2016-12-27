@@ -1,11 +1,12 @@
 {
   "name": "berlin-map",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "ReactJS google map, based on Max Stoiber react-boilerplate",
   "repository": {
     "type": "git",
     "url": "git@github.com:easingthemes/berlinmap.git"
   },
+  "https://heroku.com/deploy?template=https://github.com/easingthemes/berlinmap.git": "",
   "engines": {
     "npm": ">=3"
   },
