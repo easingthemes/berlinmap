@@ -6,7 +6,6 @@
     "type": "git",
     "url": "git@github.com:easingthemes/berlinmap.git"
   },
-  "https://heroku.com/deploy?template=https://github.com/easingthemes/berlinmap.git": "",
   "engines": {
     "npm": ">=3"
   },
